@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.bg-primary {
+    @apply bg-[#F8E3E8]
+}
+
+.text-primary {
+    @apply text-[#D74874]
+}
+.hero-bg {
+    background-image: url('../public/homepage/hero-background.jpg');
+}
+.text-shadow{
+    text-shadow: 0px 0px 10px #000000;
+}
+.blur-background{
+    @apply backdrop-blur-sm;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 3.95%, rgba(255, 255, 255, 0) 88.83%);
+}
+@media (max-width:640px) {
+    .hero-bg{
+        background-position: 57%;
+    }
+}
+
+.vertical-lr{
+    writing-mode: vertical-lr;
+}
+
+.grid-custom-column{
+    grid-template-columns: 1fr 50px;
+}
+.purple-linear{
+    background: linear-gradient(0.68deg, #743D7D 0.59%, rgba(116, 61, 125, 0.81) 41.77%, rgba(0, 0, 0, 0) 99.43%);
+}
+.purple-overlay{
+    background: linear-gradient(0.68deg, #D64D78 0.59%, rgba(213, 77, 120, 0.6) 56.19%, rgba(0, 0, 0, 0) 99.43%);
+}
+.theme-x-padding{
+    @apply px-3 md:px-[14vw]
+}
+.theme-l-padding{
+    @apply pl-3 md:pl-[14vw]
+}
+.theme-r-padding{
+    @apply pr-3 md:pr-[14vw]
+}
