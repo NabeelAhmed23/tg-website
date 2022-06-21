@@ -14,13 +14,13 @@ export default class HotelBookingForm extends Component {
         checkout: null,
         guests: null
     }
-
     handleFormSubmit = e => {
         e.preventDefault();
+        console.log('Hotel Booking Form Submitted')
     }
     render() {
         return (
-            <form action="" onSubmit={this.handleFormSubmit}>
+            <form onSubmit={(e) => this.handleFormSubmit(e)} id={this.props.formID}>
                 <HotelBookingInputs label={'Location'} icon={<MdOutlineLocationOn />} >
                     <TextInput name='hotelLocation' className='ml-6 text-sm focus:outline-none' id='hotelLocation' onChange={(e) => this.setState({ hotelName: e.target.value })} placeholder='Where are you going?' />
                 </HotelBookingInputs>
@@ -42,7 +42,7 @@ export default class HotelBookingForm extends Component {
                     </HotelBookingInputs>
 
                 </div>
-                <div className='w-full mt-4'>
+                <div className='w-full mt-4 xl:hidden'>
                     <button className='bg-[#743D7D] py-3 text-center rounded text-white w-full '>Search</button>
                 </div>
             </form>
