@@ -16,7 +16,7 @@ export default class FeaturedNews extends Component {
                             on its origins, as well as a random Lipsum generator.</p>
                         <Link href="#"><a className='text-primary mt-4 hidden xl:inline-block underline'> View All Update </a></Link>
                     </div>
-                    <div>
+                    <div className='overflow-hidden'>
                         <Splide options={{
                             autoplay: false,
                             perPage: 3,
@@ -29,7 +29,7 @@ export default class FeaturedNews extends Component {
                                     perPage: 2,
                                     padding: { right: "2rem" }
                                 },
-
+                                
                                 640: {
                                     perPage: 1,
                                     type: "loop",

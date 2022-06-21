@@ -12,7 +12,7 @@ export default function HeroSlider({ handleArrow }) {
     return (
         <div className='absolute right-0 -bottom-16 md:-bottom-20 lg:-bottom-12 2xl:-bottom-[5vw] w-[calc(100%_-_30vw)] md:w-[calc(100%_-_22vw)] lg:w-[calc(100%_-_18vw)] xl:w-[calc(100%_-_14vw)]'>
             <div className='grid grid-custom-column gap-4'>
-                <div className='relative rounded overflow-hidden'>
+                <div className='relative rounded overflow-hidden 2xl:max-h-[350px]'>
                     <Splide ref={ref} options={{
                         type: "loop",
                         perPage: 3,

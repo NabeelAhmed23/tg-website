@@ -6,7 +6,7 @@ export default function GroupTripsComponent() {
     return (
         <div>
             <h1 className='font-bold text-primary text-lg'>Gay Group Trips</h1>
-            <div className='mt-2'>
+            <div className='mt-2 '>
                 <Splide extensions={{ Grid }} options={{
                     autoplay: false,
                     grid: {
@@ -21,15 +21,12 @@ export default function GroupTripsComponent() {
                     gap: '1rem',
                     pagination: false,
                     focus: 'center',
-                    className: "pr-4",
+                    className: "pr-20",
                     breakpoints: {
                         1280: {
                             grid: {
                                 rows: 2,
                                 cols: 1,
-                                gap: {
-                                    row: "1rem"
-                                }
                             }
                         },
                         1023: {
@@ -52,26 +49,26 @@ export default function GroupTripsComponent() {
                     },
                 }}>
                     <SplideSlide>
-                        <div className='relative'>
-                            <img src="/homepage/trip1.jpg" alt="" className='w-full' />
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                            <img src="/homepage/trip1.jpg" alt="" className='w-full h-full' />
                             <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Berline</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative'>
-                            <img src="/homepage/trip2.jpg" alt="" className='w-full' />
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                            <img src="/homepage/trip2.jpg" alt="" className='w-full h-full' />
                             <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Dubai</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative'>
-                            <img src="/homepage/trip3.jpg" alt="" className='w-full' />
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                            <img src="/homepage/trip3.jpg" alt="" className='w-full h-full' />
                             <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Tokyo</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative'>
-                            <img src="/homepage/trip4.jpg" alt="" className='w-full' />
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                            <img src="/homepage/trip4.jpg" alt="" className='w-full h-full' />
                             <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Australia</button>
                         </div>
                     </SplideSlide>
