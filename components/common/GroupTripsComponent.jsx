@@ -44,7 +44,7 @@ export default function GroupTripsComponent() {
                             perPage: 1,
                             type: 'loop',
                             grid: false,
-                            padding: { right: "2rem" }
+                            padding: { right: "0rem" }
                         }
                     },
                 }}>

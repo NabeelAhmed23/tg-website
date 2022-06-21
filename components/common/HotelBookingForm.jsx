@@ -14,9 +14,13 @@ export default class HotelBookingForm extends Component {
         checkout: null,
         guests: null
     }
+
+    handleFormSubmit = e => {
+        e.preventDefault();
+    }
     render() {
         return (
-            <form action="" >
+            <form action="" onSubmit={this.handleFormSubmit}>
                 <HotelBookingInputs label={'Location'} icon={<MdOutlineLocationOn />} >
                     <TextInput name='hotelLocation' className='ml-6 text-sm focus:outline-none' id='hotelLocation' onChange={(e) => this.setState({ hotelName: e.target.value })} placeholder='Where are you going?' />
                 </HotelBookingInputs>
@@ -28,7 +32,7 @@ export default class HotelBookingForm extends Component {
                         <DateInput name='hotelCheckout' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='hotelCheckout' onChange={(e) => this.setState({ checkout: e.target.value })} placeholder='Where are you going?' />
                     </HotelBookingInputs>
                     <HotelBookingInputs label={'Guests'} icon={<FiUsers />} className='col-span-2 xl:col-span-1'>
-                        <SelectInput name='guestsNumber' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='guestsNumber' onChange={(e) => this.setState({guests: e.target.options[e.target.selectedIndex].value})} placeholder='Where are you going?' >
+                        <SelectInput name='guestsNumber' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='guestsNumber' onChange={(e) => this.setState({ guests: e.target.options[e.target.selectedIndex].value })} placeholder='Where are you going?' >
                             <option value='0'>0 Guests</option>
                             <option value='1'>1 Guests</option>
                             <option value='2'>2 Adults</option>
@@ -36,6 +40,10 @@ export default class HotelBookingForm extends Component {
                             <option value='4'>4 Adults</option>
                         </SelectInput>
                     </HotelBookingInputs>
+
+                </div>
+                <div className='w-full mt-4'>
+                    <button className='bg-[#743D7D] py-3 text-center rounded text-white w-full '>Search</button>
                 </div>
             </form>
         )
