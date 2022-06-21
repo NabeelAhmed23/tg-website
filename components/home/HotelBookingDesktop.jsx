@@ -6,7 +6,7 @@ export default class HotelBookingDesktop extends Component {
     render() {
         const formID = 'hotelBookingForm'; 
         return (
-            <section className='mt-56 theme-x-padding hidden xl:block '>
+            <section className='mt-36 2xl:mt-56 theme-x-padding hidden xl:block '>
                 <div className='bg-primary p-6 2xl:p-10 grid grid-cols-[180px_1fr_100px] 2xl:grid-cols-[220px_1fr_100px] gap-4 rounded shadow-lg items-center'>
                     <div>
                         <h3 className='text-primary font-bold text-xl mt-1 2xl:text-2xl'>Book A Travel Gay Approved Hotel</h3>
