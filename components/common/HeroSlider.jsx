@@ -10,9 +10,9 @@ export default function HeroSlider({ handleArrow }) {
         handleArrow(ref.current.splide);
     },[handleArrow])
     return (
-        <div className='absolute right-0 -bottom-16 md:-bottom-20 lg:-bottom-12 2xl:-bottom-20'>
+        <div className='absolute right-0 -bottom-16 md:-bottom-20 lg:-bottom-12 2xl:-bottom-[5vw] w-[calc(100%_-_30vw)] md:w-[calc(100%_-_22vw)] lg:w-[calc(100%_-_18vw)] xl:w-[calc(100%_-_14vw)]'>
             <div className='grid grid-custom-column gap-4'>
-                <div className='relative max-w-[13.5rem] sm:max-w-[30rem] lg:max-w-[45rem] xl:max-w-[77vw] rounded overflow-hidden'>
+                <div className='relative rounded overflow-hidden'>
                     <Splide ref={ref} options={{
                         type: "loop",
                         perPage: 3,
@@ -32,7 +32,7 @@ export default function HeroSlider({ handleArrow }) {
                     }}>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover w-full h-full ' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -41,7 +41,7 @@ export default function HeroSlider({ handleArrow }) {
                         </SplideSlide>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -50,7 +50,7 @@ export default function HeroSlider({ handleArrow }) {
                         </SplideSlide>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -59,7 +59,7 @@ export default function HeroSlider({ handleArrow }) {
                         </SplideSlide>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -68,7 +68,7 @@ export default function HeroSlider({ handleArrow }) {
                         </SplideSlide>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -77,7 +77,7 @@ export default function HeroSlider({ handleArrow }) {
                         </SplideSlide>
                         <SplideSlide>
                             <div className='relative'>
-                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover' />
+                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />

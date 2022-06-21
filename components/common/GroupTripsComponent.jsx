@@ -32,16 +32,21 @@ export default function GroupTripsComponent() {
                                 }
                             }
                         },
-                        1024: {
-                            grid: false,
-                            perPage: 2,
+                        1023: {
                             type: 'loop',
-                            padding: { right: "1rem" }
+                            padding: { right: "1rem" },
+                            grid: {
+                                cols: 2,
+                                rows: 1,
+                                gap: {
+                                    row: "1rem"
+                                }
+                            }
                         },
-
                         640: {
                             perPage: 1,
                             type: 'loop',
+                            grid: false,
                             padding: { right: "2rem" }
                         }
                     },

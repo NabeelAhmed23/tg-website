@@ -20,7 +20,7 @@ export default function HotelBooking() {
         })
     })
     return (
-        <section className='bg-black/[0.8] fixed inset-0 z-[100] pointer-events-none xl:hidden'>
+        <section className='bg-black/[0.8] fixed inset-0 z-[100] pointer-events-none hidden xl:hidden'>
             <div className='bg-primary px-3 py-6 fixed bottom-0 left-0 right-0 rounded-t-xl pointer-events-auto transition-all' ref={ref}>
                 <div className='flex flex-col items-center'>
                     <hr className='h-1 rounded bg-[#D74874] mb-6 w-[116px]' />
