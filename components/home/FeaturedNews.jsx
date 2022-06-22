@@ -14,7 +14,7 @@ export default class FeaturedNews extends Component {
                             on its origins, as well as a random Lipsum generator.
                             Reference site about Lorem Ipsum, giving information
                             on its origins, as well as a random Lipsum generator.</p>
-                        <Link href="#"><a className='text-primary mt-4 hidden xl:inline-block underline'> View All Update </a></Link>
+                        <Link href="#"><a className='text-primary mt-4 hidden md:inline-block underline'> View All Update </a></Link>
                     </div>
                     <div className='overflow-hidden'>
                         <Splide options={{

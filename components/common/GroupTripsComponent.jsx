@@ -10,7 +10,7 @@ export default function GroupTripsComponent() {
                 <h1 className='font-bold text-primary text-xl'>Gay Group Trips</h1>
                 <Link href="#"><a className='text-[#666666] underline'> View All </a></Link>
             </div>
-            <div className='mt-2 '>
+            <div className='mt-2 overflow-hidden'>
                 <Splide extensions={{ Grid }} options={{
                     autoplay: false,
                     grid: {
@@ -35,7 +35,7 @@ export default function GroupTripsComponent() {
                         },
                         1023: {
                             type: 'loop',
-                            padding: { right: "1rem" },
+                            padding: { right: "2rem" },
                             grid: {
                                 cols: 2,
                                 rows: 1,
@@ -48,7 +48,7 @@ export default function GroupTripsComponent() {
                             perPage: 1,
                             type: 'loop',
                             grid: false,
-                            padding: { right: "0rem" }
+                            padding: { right: "2rem" }
                         }
                     },
                 }}>
