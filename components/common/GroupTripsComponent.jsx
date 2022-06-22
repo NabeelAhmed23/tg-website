@@ -1,11 +1,15 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { Grid } from '@splidejs/splide-extension-grid'
+import Link from 'next/link'
 
 export default function GroupTripsComponent() {
     return (
         <div>
-            <h1 className='font-bold text-primary text-lg'>Gay Group Trips</h1>
+            <div className='flex items-center justify-between'>
+                <h1 className='font-bold text-primary text-xl'>Gay Group Trips</h1>
+                <Link href="#"><a className='text-[#666666] underline'> View All </a></Link>
+            </div>
             <div className='mt-2 '>
                 <Splide extensions={{ Grid }} options={{
                     autoplay: false,

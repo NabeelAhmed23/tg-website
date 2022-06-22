@@ -11,6 +11,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+body{
+    overflow-x: hidden;
+    scrollbar-gutter: stable both-edges;
+}
 
 .bg-primary {
     @apply bg-[#F8E3E8]

@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import { SplideSlide, Splide } from '@splidejs/react-splide'
+import Link from 'next/link'
 
 export default class PartyComponent extends Component {
     render() {
         return (
             <div>
-                <h1 className='font-bold text-primary text-lg'>Parties & Events</h1>
+                <div className='flex items-center justify-between'>
+                    <h1 className='font-bold text-primary text-xl'>Parties & Events</h1>
+                    <Link href="#"><a className='text-[#666666] underline'> View All </a></Link>
+                </div>
                 <div className='mt-2'>
                     <Splide options={{
                         autoplay: false,
@@ -17,7 +21,7 @@ export default class PartyComponent extends Component {
                         breakpoints: {
                             1280: {
                                 perPage: 1,
-                                padding: {right: "2rem"}
+                                padding: { right: "2rem" }
                             },
                             1023: {
                                 perPage: 2,
@@ -27,12 +31,12 @@ export default class PartyComponent extends Component {
                             640: {
                                 perPage: 1,
                                 type: "loop",
-                                padding: {right:"2rem"}
+                                padding: { right: "2rem" }
                             }
                         },
                     }}>
                         <SplideSlide>
-                            <div className='relative'>
+                            <div className='relative rounded overflow-hidden'>
                                 <img src="/homepage/party1.jpg" alt="" className='w-full' />
                                 <div className='absolute bottom-0 p-3 purple-overlay w-full h-2/5 flex flex-col justify-end'>
                                     <p className='font-bold text-white xl:text-sm '>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
@@ -44,7 +48,7 @@ export default class PartyComponent extends Component {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative'>
+                            <div className='relative rounded overflow-hidden'>
                                 <img src="/homepage/party2.jpg" alt="" className='w-full' />
                                 <div className='absolute bottom-0 p-3 purple-overlay w-full h-2/5 flex flex-col justify-end'>
                                     <p className='font-bold text-white xl:text-sm'>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
