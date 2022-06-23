@@ -10,7 +10,7 @@ import PintrestIcon from '../Shared/PintrestIcon'
 export default class MainFooter extends Component {
   render() {
     return (
-      <section className='bg-primary py-5 theme-x-padding lg:py-10 mt-12 lg:mt-24'>
+      <footer className='bg-secondary py-5 theme-x-padding lg:py-10 mt-12 lg:mt-24'>
         <FooterLinks />
         <div className='grid lg:grid-cols-[200px_1fr] mt-4 gap-7 lg:mt-9'>
           <div className='flex lg:flex-col justify-between lg:justify-start gap-4'>
@@ -37,7 +37,7 @@ export default class MainFooter extends Component {
         </div>
         <hr className='w-full bg-[#999999] h-[2px] mt-3 mb-5'/>
         <p className='text-sm text-center'>Travelgay.com © copyright 2022. All rights reserved.</p>
-      </section>
+      </footer>
     )
   }
 }

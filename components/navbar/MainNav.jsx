@@ -23,7 +23,7 @@ export default class MainNav extends Component {
                     <Link href='/'><a> <img src='/logo.png' className='w-32 xl:w-40 2xl:w-auto'/> </a></Link>
                 </div>
                 <div className='flex items-center justify-center flex-1 gap-[2%]'>
-                    <SearchBar className={'absolute bg-white rounded flex items-center -bottom-4 left-1 right-1 shadow-md sm:static flex-1 mx-4 xl:max-w-sm justify-end'}>  <div className='py-1 px-4 border-l'>
+                    <SearchBar className={'absolute bg-white rounded flex items-center -bottom-4 left-1 right-1 shadow-xl sm:shadow-none sm:static flex-1 mx-4 sm:mx-0 xl:mx-4 xl:max-w-sm justify-end'}>  <div className='py-1 px-4 border-l'>
                         <IconContext.Provider value={{ className: 'text-primary' }}>
                             <HiOutlineSearch />
                         </IconContext.Provider>

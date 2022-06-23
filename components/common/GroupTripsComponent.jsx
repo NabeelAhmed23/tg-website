@@ -55,25 +55,25 @@ export default function GroupTripsComponent() {
                     <SplideSlide>
                         <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
                             <img src="/homepage/trip1.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Berline</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Berline</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
                             <img src="/homepage/trip2.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Dubai</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Dubai</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
                             <img src="/homepage/trip3.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Tokyo</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Tokyo</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
                         <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
                             <img src="/homepage/trip4.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded text-sm absolute bottom-3 left-3 font-bold xl:text-xs'>Sydeny To Australia</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Australia</button>
                         </div>
                     </SplideSlide>
 

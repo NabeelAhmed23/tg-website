@@ -39,9 +39,9 @@ export default class PartyComponent extends Component {
                             <div className='relative rounded overflow-hidden'>
                                 <img src="/homepage/party1.jpg" alt="" className='w-full' />
                                 <div className='absolute bottom-0 p-3 purple-overlay w-full h-2/5 flex flex-col justify-end'>
-                                    <p className='font-bold text-white xl:text-sm '>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
+                                    <p className='font-semibold text-white xl:text-sm '>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
                                     <div className='flex justify-between items-center mt-5'>
-                                        <button className="rounded px-3 py-2 2xl:px-4 2xl:py-3 font-bold bg-white shadow-md text-xs 2xl:text-sm">View Details</button>
+                                        <button className="rounded px-3 py-2 2xl:px-4 2xl:py-3 font-semibold bg-white shadow-md">View Details</button>
                                         <p className='text-xs text-white'>Friday, May 27</p>
                                     </div>
                                 </div>
@@ -51,9 +51,9 @@ export default class PartyComponent extends Component {
                             <div className='relative rounded overflow-hidden'>
                                 <img src="/homepage/party2.jpg" alt="" className='w-full' />
                                 <div className='absolute bottom-0 p-3 purple-overlay w-full h-2/5 flex flex-col justify-end'>
-                                    <p className='font-bold text-white xl:text-sm'>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
+                                    <p className='font-semibold text-white xl:text-sm'>Firebird Tell Us Love Story. Story of Bar See More About Next...</p>
                                     <div className='flex justify-between items-center mt-5'>
-                                        <button className="rounded px-3 py-2 2xl:px-4 2xl:py-3 font-bold bg-white shadow-md text-xs 2xl:text-sm">View Details</button>
+                                        <button className="rounded px-3 py-2 2xl:px-4 2xl:py-3 font-semibold bg-white shadow-md">View Details</button>
                                         <p className='text-xs text-white'>Friday, May 27</p>
                                     </div>
                                 </div>

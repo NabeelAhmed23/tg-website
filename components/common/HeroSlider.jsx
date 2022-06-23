@@ -8,11 +8,11 @@ export default function HeroSlider({ handleArrow }) {
 
     useEffect(() => {
         handleArrow(ref.current.splide);
-    },[handleArrow])
+    }, [handleArrow])
     return (
-        <div className='absolute right-0 top-12 md:top-0 w-[calc(100%_-_25vw)] md:w-[calc(100%_-_22vw)] lg:w-[calc(100%_-_18vw)] xl:w-[calc(100%_-_14vw)]'>
-            <div className='grid grid-custom-column gap-4'>
-                <div className='relative rounded overflow-hidden'>
+        <div className='absolute right-0 top-12 md:top-0 w-[calc(100%_-_25vw)] md:w-[calc(100%_-_22vw)] lg:w-[calc(100%_-_19vw)] xl:w-[calc(100%_-_15vw)]'>
+            <div className='grid grid-cols-[1fr_50px] lg:grid-cols-[1fr_100px] gap-4'>
+                <div className='relative rounded overflow-hidden '>
                     <Splide ref={ref} options={{
                         type: "loop",
                         perPage: 3,
@@ -22,10 +22,16 @@ export default function HeroSlider({ handleArrow }) {
                         pagination: false,
                         focus: 'center',
                         breakpoints: {
+                            1536:{
+                                perPage: 3
+                            },
+                            1280: {
+                                perPage: 2.5
+                            },
                             1024: {
                                 perPage: 2
                             },
-                            768:{
+                            768: {
                                 perPage: 1.5,
                             },
                             640: {
@@ -34,8 +40,8 @@ export default function HeroSlider({ handleArrow }) {
                         },
                     }}>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover w-full h-full ' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel1.jpg" alt="" className=' object-cover w-full h-full ' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -43,8 +49,8 @@ export default function HeroSlider({ handleArrow }) {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover w-full h-full' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel2.jpg" alt="" className=' object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -52,8 +58,8 @@ export default function HeroSlider({ handleArrow }) {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover w-full h-full' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel3.jpg" alt="" className=' object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -61,8 +67,8 @@ export default function HeroSlider({ handleArrow }) {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel1.jpg" alt="" className='object-cover w-full h-full' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel1.jpg" alt="" className=' object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -70,8 +76,8 @@ export default function HeroSlider({ handleArrow }) {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel3.jpg" alt="" className='object-cover w-full h-full' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel3.jpg" alt="" className=' object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -79,8 +85,8 @@ export default function HeroSlider({ handleArrow }) {
                             </div>
                         </SplideSlide>
                         <SplideSlide>
-                            <div className='relative rounded overflow-hidden'>
-                                <img src="/homepage/hotel2.jpg" alt="" className='object-cover w-full h-full' />
+                            <div className='relative rounded overflow-hidden border border-[#CCC]'>
+                                <img src="/homepage/hotel2.jpg" alt="" className=' object-cover w-full h-full' />
                                 <div className='purple-linear absolute bottom-0 p-3 flex w-full justify-between items-center'>
                                     <p className='text-white text-xs md:text-sm'>Gay Group Trip: Dubai To Korea</p>
                                     <TgApprovedLogo className={'w-6 h-5'} />
@@ -91,8 +97,8 @@ export default function HeroSlider({ handleArrow }) {
                     </Splide>
                 </div>
                 <div className='rotate-180 h-full'>
-                    <button className='flex flex-col items-center bg-[#743D7D] px-3 py-5 rounded-r h-full justify-center'>
-                        <ArrowBorderButton className={'w-6 h-6 mb-4'} /> <h3 className='text-sm text-white font-bold vertical-lr'>View All</h3>
+                    <button className='flex flex-col items-center bg-[#743D7D] px-3 py-5 rounded-r h-full lg:w-full justify-center shadow-lg'>
+                        <ArrowBorderButton className={'w-6 h-6 mb-4'} /> <h3 className='text-sm text-white font-semibold vertical-lr'>View All</h3>
                     </button>
                 </div>
             </div>

@@ -8,7 +8,7 @@ export default class FeaturedNews extends Component {
             <section className='py-10 theme-x-padding lg:py-20 xl:py-28'>
                 <div className='grid grid-cols-1 lg:grid-cols-[20rem_1fr] gap-4'>
                     <div>
-                        <h1 className='text-lg font-bold text-primary max-w-[19.5rem] xl:text-3xl sm:max-w-none'>Gay Travel News, Interviews & Features</h1>
+                        <h1 className='text-xl font-bold text-primary max-w-[19.5rem] xl:text-3xl sm:max-w-none'>Gay Travel News, Interviews & Features</h1>
                         <hr className='bg-[#D64D78] w-[7.5rem] mt-2 h-[2px] xl:mt-4' />
                         <p className='text-sm mt-2 xl:mt-4'>Reference site about Lorem Ipsum, giving information
                             on its origins, as well as a random Lipsum generator.
