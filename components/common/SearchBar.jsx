@@ -13,7 +13,7 @@ export default class SearchBar extends Component {
                     name="search"
                     id="search"
                     onChange={(e) => this.handleSearch(e)}
-                    className='px-4 py-2 rounded text-sm h-10 w-full focus:outline-0'
+                    className='px-5 py-2 rounded text-sm h-10 w-full focus:outline-0'
                     placeholder='What are you looking for?'
                 />
             {this.props.children}

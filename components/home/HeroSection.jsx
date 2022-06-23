@@ -27,7 +27,7 @@ export default class HeroSection extends Component {
                             clubs saunas & beaches. Book a
                             hotel read reviews & get discount.</p>
                         <SearchBar className={'flex items-center bg-white rounded w-full mt-4 xl:mt-6 2xl:mt-8'} >
-                            <button className='bg-[#743D7D] text-white h-10 text-xs rounded-r font-bold px-3 w-[6rem]'>Lets Go</button>
+                            <button className='bg-[#743D7D] text-white h-10 m-[1px] text-xs rounded-r font-bold px-3 w-[6rem]'>Lets Go</button>
                         </SearchBar>
                         <div className='flex justify-between mt-4 xl:mt-6 2xl:mt-8'>
                             <p className='text-white underline text-xs lg:text-sm 2xl:text-base'>Bangkok</p>
