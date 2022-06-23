@@ -17,7 +17,7 @@ export default class MainNav extends Component {
     }
     render() {
         return (
-            <header className='pt-5 pb-8 px-3 bg-primary flex justify-between items-center sm:py-4 sticky top-0 xl:px-[3vw] xl:py-6 2xl:px-[5vw] gap-2 xl:shadow-lg z-50'>
+            <header className='pt-5 pb-8 px-3 bg-primary flex justify-between items-center sm:py-4 sticky top-0 xl:px-[3vw] xl:py-4 2xl:px-[5vw] gap-2 xl:shadow-lg z-50'>
                 <div className='flex items-center gap-2'>
                     <HamburgerButton handleHamburgerMenu={this.handleHamburgerMenu} className='xl:hidden' />
                     <Link href='/'><a> <img src='/logo.png' className='w-32 xl:w-40 2xl:w-auto'/> </a></Link>

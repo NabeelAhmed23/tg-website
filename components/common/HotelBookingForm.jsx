@@ -51,7 +51,7 @@ export default class HotelBookingForm extends Component {
                 <HotelBookingInputs label={'Location'} icon={<MdOutlineLocationOn />} >
                     <TextInput name='hotelLocation' className='ml-6 text-sm focus:outline-none' id='hotelLocation' onChange={(e) => this.setState({ hotelName: e.target.value })} placeholder='Where are you going?' />
                 </HotelBookingInputs>
-                <div className='grid grid-cols-2 xl:grid-cols-3 mt-4 gap-4'>
+                <div className='grid grid-cols-2 xl:grid-cols-3 mt-4 gap-8'>
                     <div>
 
                         <HotelBookingInputs label={'Check In'} icon={<VscCalendar />} >

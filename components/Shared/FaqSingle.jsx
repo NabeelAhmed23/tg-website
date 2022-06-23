@@ -8,7 +8,7 @@ export default function FaqSingle({ faq }) {
     return (
         <div className='border-b border-[#d64d78] border-opacity-50 py-3'>
             <div className='flex justify-between'>
-                <h1 className='font-semibold w-max-[300px]'>{faq.label}</h1>
+                <h1 className='font-semibold w-max-[300px] text-sm'>{faq.label}</h1>
                 <button onClick={() => setActive(!active)}>
                     {active ? <IconContext.Provider value={{ className: "text-primary" }}>
                         <AiOutlineMinus />

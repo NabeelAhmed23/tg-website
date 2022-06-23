@@ -7,10 +7,10 @@ export default function GroupTripsComponent() {
     return (
         <div>
             <div className='flex items-center justify-between'>
-                <h1 className='font-bold text-primary text-xl'>Gay Group Trips</h1>
+                <h1 className='font-bold text-primary text-xl xl:text-[28px]'>Gay Group Trips</h1>
                 <Link href="#"><a className='text-[#666666] underline'> View All </a></Link>
             </div>
-            <div className='mt-2 overflow-hidden'>
+            <div className='mt-2 overflow-hidden xl:mt-8'>
                 <Splide extensions={{ Grid }} options={{
                     autoplay: false,
                     grid: {
@@ -53,27 +53,27 @@ export default function GroupTripsComponent() {
                     },
                 }}>
                     <SplideSlide>
-                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto hover:drop-shadow-md'>
                             <img src="/homepage/trip1.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Berline</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 xl:text-sm font-semibold'>Sydeny To Berline</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto hover:drop-shadow-md'>
                             <img src="/homepage/trip2.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Dubai</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 xl:text-sm font-semibold'>Sydeny To Dubai</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto hover:drop-shadow-md'>
                             <img src="/homepage/trip3.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Tokyo</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 xl:text-sm font-semibold'>Sydeny To Tokyo</button>
                         </div>
                     </SplideSlide>
                     <SplideSlide>
-                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto'>
+                        <div className='relative lg:h-[calc(100%_-_3rem)] xl:h-auto hover:drop-shadow-md'>
                             <img src="/homepage/trip4.jpg" alt="" className='w-full h-full' />
-                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 font-semibold'>Sydeny To Australia</button>
+                            <button className='bg-white px-4 py-3 rounded absolute bottom-3 left-3 xl:text-sm font-semibold'>Sydeny To Australia</button>
                         </div>
                     </SplideSlide>
 
