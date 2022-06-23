@@ -12,7 +12,34 @@ export default class HotelBookingForm extends Component {
         hotelName: '',
         checkin: null,
         checkout: null,
-        guests: null
+        guests: null,
+        minDate: ''
+    }
+    componentDidMount = () => {
+        const finalDate = this.getDate(new Date)
+        this.setState({ checkin: finalDate, checkout: finalDate, minDate: this.getDate(new Date(finalDate), 'yyyy-mmm-dd') })
+    }
+
+    getDate = (d, format) => {
+        const monthNames = ["Jan", "Feb", "March", "April", "May", "June",
+            "July", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ];
+        const date = new Date(d)
+        let finalDate
+        if (format === "yyyy-mmm-dd") finalDate = `${date.getFullYear()}-${((date.getMonth() + 1) < 10) ? ('0' + (date.getMonth() + 1)) : (date.getMonth() + 1)}-${date.getDate() < 10 ? ('0' + (date.getDate())) : (date.getDate())}`
+        else finalDate = `${date.getDate()} ${monthNames[date.getMonth()]}, ${date.getFullYear()}`
+        return finalDate
+    }
+    handleCheckInDate = e => {
+        this.setState({ checkin: this.getDate(e.target.value) }, () => {
+            const min = this.getDate(new Date(this.state.checkin), 'yyyy-mmm-dd')
+            this.setState({ minDate: min })
+        })
+
+
+    }
+    handleCheckOutDate = e => {
+        this.setState({ checkout: this.getDate(e.target.value) })
     }
     handleFormSubmit = e => {
         e.preventDefault();
@@ -25,14 +52,23 @@ export default class HotelBookingForm extends Component {
                     <TextInput name='hotelLocation' className='ml-6 text-sm focus:outline-none' id='hotelLocation' onChange={(e) => this.setState({ hotelName: e.target.value })} placeholder='Where are you going?' />
                 </HotelBookingInputs>
                 <div className='grid grid-cols-2 xl:grid-cols-3 mt-4 gap-4'>
-                    <HotelBookingInputs label={'Check In'} icon={<VscCalendar />} >
-                        <DateInput name='hotelCheckin' className='ml-6 text-sm focus:outline-none w-[calc(100%_-_1.5rem)]' id='hotelCheckin' onChange={(e) => this.setState({ checkin: e.target.value })} placeholder='Where are you going?' />
-                    </HotelBookingInputs>
+                    <div>
+
+                        <HotelBookingInputs label={'Check In'} icon={<VscCalendar />} >
+                            <div className='flex justify-between items-center pl-6'>
+                                <p className='text-xs'>{this.state.checkin}</p>
+                                <DateInput name='hotelCheckin' className='ml-6 text-sm focus:outline-none w-[18px]' id='hotelCheckin' onChange={(e) => this.handleCheckInDate(e)} />
+                            </div>
+                        </HotelBookingInputs>
+                    </div>
                     <HotelBookingInputs label={'Check Out'} icon={<VscCalendar />} >
-                        <DateInput name='hotelCheckout' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='hotelCheckout' onChange={(e) => this.setState({ checkout: e.target.value })} placeholder='Where are you going?' />
+                        <div className='flex justify-between items-center pl-6'>
+                            <p className='text-xs'>{this.state.checkout}</p>
+                            <DateInput name='hotelCheckOut' className='ml-6 text-sm focus:outline-none w-[18px]' min={this.state.minDate} id='hotelCheckOut' onChange={(e) => this.handleCheckOutDate(e)} />
+                        </div>
                     </HotelBookingInputs>
                     <HotelBookingInputs label={'Guests'} icon={<FiUsers />} className='col-span-2 xl:col-span-1'>
-                        <SelectInput name='guestsNumber' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='guestsNumber' onChange={(e) => this.setState({ guests: e.target.options[e.target.selectedIndex].value })} placeholder='Where are you going?' >
+                        <SelectInput name='guestsNumber' className='ml-6 text-sm focus:outline-none  w-[calc(100%_-_1.5rem)]' id='guestsNumber' onChange={(e) => this.setState({ guests: e.target.options[e.target.selectedIndex].value })}>
                             <option value='0'>0 Guests</option>
                             <option value='1'>1 Guests</option>
                             <option value='2'>2 Adults</option>
