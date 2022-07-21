@@ -1,13 +1,17 @@
-import React from 'react'
-import MainNav from '../components/navbar/MainNav'
-import MainFooter from '../components/footer/MainFooter'
+import PropTypes from "prop-types";
+import HeaderWrapper from "../components/header/HeaderWrapper";
+import MainFooter from "../components/footer/MainFooter";
 
 export default function Layout({ children }) {
-    return (
-        <>
-            <MainNav />
-            <main>{children}</main>
-            <MainFooter />
-        </>
-    )
+  return (
+    <>
+      <HeaderWrapper />
+      <main>{children}</main>
+      <MainFooter />
+    </>
+  );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
