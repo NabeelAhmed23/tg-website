@@ -1,11 +1,5 @@
-import React, { Component } from 'react'
-
-export default class SelectInput extends Component {
-    render() {
-        return (
-            <select {...this.props}>
-                {this.props.children}
-            </select>
-        )
-    }
+export default function SelectInput(props) {
+  // eslint-disable-next-line react/prop-types
+  const { children } = props;
+  return <select {...props}>{children}</select>;
 }

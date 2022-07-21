@@ -1,9 +1,9 @@
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { AiOutlineUser } from "react-icons/ai";
+import Link from "next/link";
 import { IconContext } from "react-icons";
 import LastItemButton from "./LastItemButton";
-import Link from "next/link";
 
 const iconClassRed = { className: "text-primary w-5 sm:w-4 sm:h-4" };
 const iconClassWhite = { className: "fill-[white] text-primary" };
