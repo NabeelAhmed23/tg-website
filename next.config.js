@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    NEXT_PUBLIC_UAT: "httpl://13.52.123.47/api/",
+    NEXT_PUBLIC_UAT: "http://13.52.123.47/api/",
     NEXT_PUBLIC_PROD: "http://13.52.123.47/api/",
     GOOGLE_CLIENT_ID:
       "110084946323-octp7rcqtaof21aou285mfi0ih5rku1e.apps.googleusercontent.com",
