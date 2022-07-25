@@ -51,7 +51,7 @@ export default function HeaderWrapper() {
             </Link>
           </div>
           <div className="absolute -bottom-7 left-4 right-4 xl:relative xl:inset-auto xl:w-[280px] 2xl:w-[316px] 3xl:w-[376px]">
-            <Searchbar className="flex items-center bg-white rounded mt-[2px] shadow-md xl:shadow-none">
+            <Searchbar className="flex items-center bg-white rounded mt-[2px] shadow-[0_0_10px_rgba(0,0,0,0.25)] xl:shadow-none">
               <div className="px-4 xl:px-3 2xl:px-4 border-l">
                 <IconContext.Provider value={iconClass}>
                   <HiOutlineSearch />

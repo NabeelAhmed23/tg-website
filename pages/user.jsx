@@ -4,11 +4,16 @@ import { deleteUser } from "../utils/services/ApiCalls";
 export default function user() {
   const session = useSession();
   async function handleUserDelete() {
-    const res = await deleteUser(
-      session.data.user.user_id,
-      session.data.user.token,
-    );
-    console.log(res);
+    try {
+      const res = await deleteUser(
+        session.data.user.user_id,
+        session.data.user.token,
+      );
+      console.log(res);
+      signOut();
+    } catch (error) {
+      throw new Error(error.message);
+    }
   }
   return (
     <div className="theme-container pt-4">

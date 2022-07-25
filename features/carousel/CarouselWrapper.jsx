@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import { useState } from "react";
 import HotelCarousel from "./HotelCarousel";
 
@@ -25,7 +26,7 @@ export default function CarouselWrapper() {
             Travel Gay Approved!
           </p>
           <div className="mt-2 hidden md:block">
-            <button type="button" onClick={() => handleSplide("<")}>
+            <button type="button" onClick={() => handleSplide("-${i}")}>
               <svg
                 className="w-8 h-8 mr-1"
                 viewBox="0 0 32 32"
@@ -47,7 +48,7 @@ export default function CarouselWrapper() {
                 />
               </svg>
             </button>
-            <button type="button" onClick={() => handleSplide(">")}>
+            <button type="button" onClick={() => handleSplide("+${i}")}>
               <svg
                 className="w-8 h-8 ml-1 rotate-180"
                 viewBox="0 0 32 32"
@@ -71,7 +72,7 @@ export default function CarouselWrapper() {
             </button>
           </div>
           <div className="mt-2 md:hidden">
-            <button type="button" onClick={() => handleSplide("<")}>
+            <button type="button" onClick={() => handleSplide("-${i}")}>
               <svg
                 className="w-8 h-8 mr-1"
                 viewBox="0 0 32 32"
@@ -93,7 +94,7 @@ export default function CarouselWrapper() {
                 />
               </svg>
             </button>
-            <button type="button" onClick={() => handleSplide(">")}>
+            <button type="button" onClick={() => handleSplide("+${i}")}>
               <svg
                 className="w-8 h-8 ml-1 rotate-180"
                 viewBox="0 0 32 32"

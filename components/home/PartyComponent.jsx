@@ -22,7 +22,7 @@ export default function PartyComponent() {
           Parties & Events
         </h1>
         <Link href="#">
-          <a className="text-[#666666] underline pr-4"> View All </a>
+          <a className="text-[#666666] pr-4"> View All </a>
         </Link>
       </div>
       <div className="mt-2 xl:mt-5 py-4 pl-4 md:p-4 overflow-hidden trip-slider">

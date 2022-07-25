@@ -49,7 +49,7 @@ export default function FeaturedNews() {
                 <img src="/homepage/featured1.jpg" alt="" className="w-full" />
                 <div className="mt-3">
                   <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-bold xl:text-lg">
+                  <h2 className="mt-1 font-semibold xl:text-lg">
                     Tom Prior On Gay Travel, Mindfulness Firebird
                   </h2>
                 </div>
@@ -60,7 +60,7 @@ export default function FeaturedNews() {
                 <img src="/homepage/featured2.jpg" alt="" className="w-full" />
                 <div className="mt-3">
                   <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-bold xl:text-lg">
+                  <h2 className="mt-1 font-semibold xl:text-lg">
                     Tom Prior On Gay Travel, Mindfulness Firebird
                   </h2>
                 </div>
@@ -71,7 +71,7 @@ export default function FeaturedNews() {
                 <img src="/homepage/featured3.jpg" alt="" className="w-full" />
                 <div className="mt-3">
                   <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-bold xl:text-lg">
+                  <h2 className="mt-1 font-semibold xl:text-lg">
                     Tom Prior On Gay Travel, Mindfulness Firebird
                   </h2>
                 </div>

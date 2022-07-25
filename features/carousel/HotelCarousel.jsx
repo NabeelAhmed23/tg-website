@@ -2,8 +2,6 @@ import { useRef, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import PropTypes from "prop-types";
 import CarouselSlide from "./CarouselSlide";
-// eslint-disable-next-line import/no-unresolved
-import "@splidejs/react-splide/css";
 
 export default function HotelCarousel({ handleArrow }) {
   const ref = useRef(null);
@@ -53,7 +51,7 @@ export default function HotelCarousel({ handleArrow }) {
           </SplideSlide>
         ))}
       </Splide>
-      <div className="relative my-1 md:my-2">
+      <div className="relative mb-1 lg:my-2">
         <button
           type="button"
           className="bg-[#743D7D] rounded-l w-full text-white h-full cursor-pointer

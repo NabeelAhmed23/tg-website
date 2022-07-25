@@ -45,7 +45,7 @@ export default NextAuth({
           account.token = res.data.data.token;
           return true;
         } catch (error) {
-          throw new Error("Something failed!");
+          throw new Error("Unexpected Error occured!");
         }
       } else return true;
     },

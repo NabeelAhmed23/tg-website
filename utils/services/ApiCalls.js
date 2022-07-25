@@ -22,7 +22,8 @@ export async function deleteUser(id, token) {
   try {
     const res = await calls(`user/${id}`, "delete", null, {
       Accept: "application/json",
-      Authorization: token,
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     });
     return res;
   } catch (err) {
