@@ -1,5 +1,5 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Link from "next/link";
+import NewsSlider from "../Shared/newsSlider/NewsSlider";
 
 export default function FeaturedNews() {
   return (
@@ -18,67 +18,11 @@ export default function FeaturedNews() {
           </p>
           <Link href="#">
             <a className="text-primary mt-4 hidden md:inline-block underline font-semibold">
-              {" "}
-              View All Update{" "}
+              View All Update
             </a>
           </Link>
         </div>
-        <div className="overflow-hidden">
-          <Splide
-            options={{
-              autoplay: false,
-              type: "loop",
-              perPage: 3,
-              arrows: false,
-              gap: "1rem",
-              pagination: false,
-              breakpoints: {
-                1280: {
-                  perPage: 2,
-                },
-
-                640: {
-                  perPage: 1,
-                  padding: { right: "2rem" },
-                },
-              },
-            }}
-          >
-            <SplideSlide>
-              <div className="relative">
-                <img src="/homepage/featured1.jpg" alt="" className="w-full" />
-                <div className="mt-3">
-                  <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-semibold xl:text-lg">
-                    Tom Prior On Gay Travel, Mindfulness Firebird
-                  </h2>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="relative">
-                <img src="/homepage/featured2.jpg" alt="" className="w-full" />
-                <div className="mt-3">
-                  <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-semibold xl:text-lg">
-                    Tom Prior On Gay Travel, Mindfulness Firebird
-                  </h2>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div className="relative">
-                <img src="/homepage/featured3.jpg" alt="" className="w-full" />
-                <div className="mt-3">
-                  <p className="text-xs">14 March, 2022</p>
-                  <h2 className="mt-1 font-semibold xl:text-lg">
-                    Tom Prior On Gay Travel, Mindfulness Firebird
-                  </h2>
-                </div>
-              </div>
-            </SplideSlide>
-          </Splide>
-        </div>
+        <NewsSlider />
       </div>
     </section>
   );

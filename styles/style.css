@@ -107,3 +107,58 @@ p{
 .bg-img{background-image: url("/homepage/featured1.jpg");}
 .bg-img1{background-image: url("/homepage/featured2.jpg");}
 .bg-img2{background-image: url("/homepage/featured3.jpg");}
+
+.internal-pagination{
+  top:8px;
+  bottom: auto !important;
+  right:8px;
+  left: auto !important;
+}
+
+.internal-pagination button {
+  width: 12px;
+  height: 12px;
+}
+.internal-pagination button.is-active{
+  width: 20px;
+  height: 20px;
+  transform: scale(1);
+}
+
+.bar-pagination{
+  bottom: -1.5rem !important;
+  gap:2px !important;
+  
+}
+.bar-pagination button{
+  background-color: #D9D9D9 !important;
+  width: 40px;
+  height: 8px;
+  transition: background 200ms ease-in;
+  border-radius:0px ;
+  margin: 0px;
+  overflow: hidden;
+}
+.bar-pagination li:first-of-type button{
+  border-top-left-radius: 4px ;
+  border-bottom-left-radius: 4px;
+}
+.bar-pagination li:last-of-type button{
+  border-top-right-radius: 4px ;
+  border-bottom-right-radius: 4px;
+}
+.bar-pagination button.is-active{
+  transform:scale(1);
+  background-color:#D74874 !important;
+  opacity: 1;
+}
+ .internalhero{
+  background-position:center center !important;
+ }
+
+ @media (min-width:1024px) {
+  .bar-pagination{
+    justify-content: flex-start !important;
+    padding-left: 4px !important;
+  }
+ }

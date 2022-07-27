@@ -18,7 +18,7 @@ export default function Layout({ children }) {
         <button
           onClick={handleScrollToTop}
           type="button"
-          className="hidden lg:block fixed right-8 bottom-8 "
+          className="hidden lg:block fixed right-3 2xl:right-12 3xl:right-[102px] bottom-8 "
         >
           <svg
             width="40"

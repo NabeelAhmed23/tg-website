@@ -1,6 +1,6 @@
-import { SplideSlide, Splide } from "@splidejs/react-splide";
 import Link from "next/link";
 import PropTypes from "prop-types";
+import PartySlider from "../Shared/partySlider/PartySlider";
 
 export default function PartyComponent() {
   const parties = [
@@ -26,42 +26,7 @@ export default function PartyComponent() {
         </Link>
       </div>
       <div className="mt-2 xl:mt-5 py-4 pl-4 md:p-4 overflow-hidden trip-slider">
-        <Splide
-          options={{
-            autoplay: true,
-            type: "loop",
-            perPage: 2,
-            arrows: false,
-            gap: "1rem",
-            pagination: false,
-            breakpoints: {
-              1280: {
-                perPage: 2,
-                // padding: { right: "2rem" },
-              },
-              1023: {
-                perPage: 2,
-                padding: { right: "1rem" },
-              },
-              768: {
-                padding: { right: "2rem" },
-              },
-              640: {
-                perPage: 1,
-              },
-            },
-          }}
-        >
-          {parties.map((party) => (
-            <SplideSlide key={party.src}>
-              <PartiesSlide
-                src={party.src}
-                label={party.label}
-                date={party.date}
-              />
-            </SplideSlide>
-          ))}
-        </Splide>
+        <PartySlider data={parties} />
       </div>
     </div>
   );

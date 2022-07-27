@@ -1,7 +1,6 @@
 import { useRef, useEffect } from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import PropTypes from "prop-types";
-import CarouselSlide from "./CarouselSlide";
+import HotelSlider from "../../components/Shared/hotelSlider/HotelSlider";
 
 export default function HotelCarousel({ handleArrow }) {
   const ref = useRef(null);
@@ -20,37 +19,7 @@ export default function HotelCarousel({ handleArrow }) {
       className="relative -top-11 md:inset-[auto] grid w-[calc(100%_-_85px)] ml-auto md:w-full 
     grid-cols-[calc(100%_-_56px)_48px] md:grid-cols-[1fr_72px] gap-2"
     >
-      <Splide
-        ref={ref}
-        options={{
-          type: "loop",
-          perPage: 3,
-          autoplay: true,
-          arrows: false,
-          gap: "1rem",
-          pagination: false,
-          breakpoints: {
-            1536: {
-              perPage: 3,
-            },
-            1280: {
-              perPage: 2,
-            },
-            1024: {
-              perPage: 1.5,
-            },
-            640: {
-              perPage: 1,
-            },
-          },
-        }}
-      >
-        {images.map((image) => (
-          <SplideSlide key={image.src}>
-            <CarouselSlide src={image.src} label={image.label} />
-          </SplideSlide>
-        ))}
-      </Splide>
+      <HotelSlider reff={ref} data={images} />
       <div className="relative mb-1 lg:my-2">
         <button
           type="button"

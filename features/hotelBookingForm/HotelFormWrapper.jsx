@@ -51,7 +51,7 @@ export default function HotelFormWrapper() {
         </div>
         <div
           className={`${
-            smFormOpen ? "h-[475px] md:h-[448px]" : "h-0 md:h-auto"
+            smFormOpen ? "h-[475px] md:h-[448px]" : "h-0"
           } overflow-hidden lg:overflow-visible lg:h-auto ${
             scrolled ? "fixed top-0 w-full z-50" : "lg:relative lg:h-24 md:mt-0"
           }`}
@@ -60,7 +60,7 @@ export default function HotelFormWrapper() {
             className={`transition-all duration-700 h-full lg:h-auto ${
               scrolled
                 ? "px-3 2xl:px-12 3xl:px-[102px] py-3 xl:py-4 2xl:py-[25px]"
-                : "relative md:absolute top-auto left-auto right-auto lg:-top-24 md:left-0 md:right-0 w-full max-w-[100%] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1312px] mx-auto md:shadow-lg lg:rounded-md  py-6 md:py-6 xl:py-6 px-4 md:px-10 lg:px-6 xl:px-8 2xl:px-10"
+                : "relative md:absolute top-auto left-auto right-auto lg:-top-[5.75rem] md:left-0 md:right-0 w-full max-w-[100%] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1312px] mx-auto md:shadow-lg lg:rounded-md  py-6 md:py-6 xl:py-6 px-4 md:px-10 lg:px-6 xl:px-8 2xl:px-10"
             } bg-primary`}
           >
             <div className="flex items-center flex-col lg:flex-row gap-3 xl:gap-6">
