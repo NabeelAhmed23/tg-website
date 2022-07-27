@@ -1,3 +1,4 @@
+import BreadCrumbs from "../../../features/breadcrumbs/BreadCrumbs";
 import HotelFormWrapper from "../../../features/hotelBookingForm/HotelFormWrapper";
 
 export default function InternalHeroSection() {
@@ -10,7 +11,9 @@ export default function InternalHeroSection() {
             "linear-gradient(0deg, rgba(116, 61, 125, 0.5), rgba(116, 61, 125, 0.5)), url(/images/internalhero.jpeg)",
         }}
       >
-        <div className="text-white h-6">BreadCrumbs</div>
+        <div className="text-white h-6">
+          <BreadCrumbs page="Gay Las Vegas" />
+        </div>
         <div className="mt-11">
           <h1 className="text-xl md:text-2xl lg:text-4xl xl:text-[48px] font-bold text-white">
             Gay Las Vegas
