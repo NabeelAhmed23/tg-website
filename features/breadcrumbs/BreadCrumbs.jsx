@@ -1,9 +1,13 @@
+import { useMemo } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import { IconContext } from "react-icons";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 export default function BreadCrumbs({ page }) {
+  const iconClass = useMemo(() => ({ className: "text-white" }), []);
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-3">
       <Link href="/">
         <a>
           <svg
@@ -22,8 +26,12 @@ export default function BreadCrumbs({ page }) {
           </svg>
         </a>
       </Link>
-      <span>{">"}</span>
-      <span>{page}</span>
+      <span>
+        <IconContext.Provider value={iconClass}>
+          <MdOutlineArrowForwardIos />
+        </IconContext.Provider>
+      </span>
+      <span className="text-sm">{page}</span>
     </div>
   );
 }
